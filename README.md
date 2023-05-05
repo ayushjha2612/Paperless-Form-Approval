@@ -8,7 +8,7 @@
    This spreadsheet also has a form called **Requests**.
 2. In the copied spreadsheet, there is no Google Form. It only has a sheet of that form. To make a new form in it, go to **Tools** in the spreadsheet menu and select **Create a new form**. Now make a new form identical to **Requests**.
 3. Change the first row in your form responses sheet to the first row of the **Requests** sheet.
-4. Delete the **Requests** sheet and rename the response sheet as "**Requests**".
+4. Delete the **Requests** sheet and rename the response sheet as **Requests**.
 5. Now go to **Extensions** -> **Apps Script**.
 6. On the left sidebar, select **Triggers** create a new trigger which execution function **TriggerGoogleForm** and event type **On form Submit**. Save the trigger.
 7. Go to option **Deploy** -> **New deployment**. Create a deployment with execute as **Me** and give access to all Google accounts.
@@ -24,3 +24,6 @@
 4. If a request is accepted it is forwarded to next approver in chain till it reaches the last approver.
 5. If a request is rejected the approval chain is terminated and request has to be initiated again.
 6. You will receive updates at each level of approval when your request is accepted/rejected.
+
+## Code
+This is the link to github: https://github.com/DineshAvulaMohanaDurga/Paperless-form-approval.git
