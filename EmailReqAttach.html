@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+
+<p>Hello,</p>
+<p>You have received a new request with the following information:</p><ul>
+<li>Requester: <?= form.requester_Email ?></li>
+<li>Requested content: <?= form.requester_Content ?></li>
+<li>Attachment: <?= form.attachment ?></li>
+</ul>
+<p>Please approve or reject this request.</p>
+ <form method="get" action="<?= actionURL ?>" target="_blank">
+		<label for="query">Add comment to accept:</label>
+		<input type="text" id="comment" name="comment"><br><br>
+		<input type="hidden" name="i" id="uuid" value="<?= uuid ?>">
+    <input type="hidden" name="state" id="state" value="<?= state ?>">
+    <input type="hidden" name="last" id="last" value="<?= last ?>">
+		<input type="submit" style="color: #03d86f;" value="accept">
+	</form>
+
+  <form method="get" action="<?= actionURL ?>" target="_blank">
+		<label for="query">Add comment to reject:</label>
+		<input type="text" id="comment" name="comment"><br><br>
+		<input type="hidden" name="i" id="uuid" value="<?= uuid ?>">
+    <input type="hidden" name="state" id="state" value="<?= state ?>">
+    <input type="hidden" name="last" id="last" value="<?= last ?>">
+		<input type="submit" style="color: #d80303;" value="reject">
+	</form>
+<!-- <p><strong><a style="color: #97bf0d;" href="<?= form.approval_Url ?>">Approve</a></strong> or <strong><a style="color: #e95f47;" href="<?= form.deny_Url ?>">Reject</a></strong></p> -->
+
+<p>Regards,</p>
+<p>Paperless Department</p>
+
+
+</body>
+
+  
+</html>

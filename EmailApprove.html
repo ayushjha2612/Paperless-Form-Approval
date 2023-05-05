@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+  </head>
+  <body>
+    <p>Hello,</p>
+    <p>
+      Your request has been approved by
+      <?= form.prevapprovers_Email ?>. The approver has made this comment "<?= form.comment ?>":
+    </p>
+    <ul>
+      <li>
+        Requester:
+        <?= form.requester_Email ?>
+      </li>
+      <li>
+        Requested content:
+        <?= form.requester_Content ?>
+      </li>
+    </ul>
+
+    <p>Regards,</p>
+    <p>Paperless Department</p>
+  </body>
+</html>
