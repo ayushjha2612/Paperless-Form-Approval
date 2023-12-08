@@ -24,6 +24,3 @@
 4. If a request is accepted it is forwarded to next approver in chain till it reaches the last approver.
 5. If a request is rejected the approval chain is terminated and request has to be initiated again.
 6. You will receive updates at each level of approval when your request is accepted/rejected.
-
-## Code
-This is the link to github: https://github.com/DineshAvulaMohanaDurga/Paperless-form-approval.git
